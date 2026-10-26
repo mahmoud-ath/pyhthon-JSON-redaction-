@@ -1,0 +1,27 @@
+{
+ "records": [
+  {
+   "evidence": {
+    "a": [
+     0,
+     null,
+     {
+      "text": "caf\u00e9"
+     }
+    ],
+    "z": false
+   },
+   "record_id": " L02 "
+  },
+  {
+   "evidence": {
+    "empty": {},
+    "value": "  keep spaces  "
+   },
+   "record_id": "L01"
+  }
+ ],
+ "summary": {
+  "records": 2
+ }
+}

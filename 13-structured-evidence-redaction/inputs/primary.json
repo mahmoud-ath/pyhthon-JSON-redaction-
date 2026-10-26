@@ -1,0 +1,98 @@
+{
+  "records": [
+    {
+      "record_id": "R03",
+      "evidence": {
+        "attempts": [
+          {
+            "password": "DEMO-P03"
+          },
+          {
+            "token": "",
+            "status": 200
+          }
+        ],
+        "tokenized": "public-tokenized"
+      }
+    },
+    {
+      "record_id": "R01",
+      "evidence": {
+        "password": "DEMO-P01",
+        "token": "DEMO-T01",
+        "Token": "case-visible"
+      }
+    },
+    {
+      "record_id": "R02",
+      "evidence": {
+        "nested": {
+          "token": "DEMO-T02",
+          "safe": {
+            "enabled": false,
+            "count": 0
+          }
+        },
+        "note": "operator-visible"
+      }
+    },
+    {
+      "record_id": "R04",
+      "evidence": {
+        "password": false,
+        "token": 0,
+        "safe": null
+      }
+    },
+    {
+      "record_id": "R05",
+      "evidence": {
+        "token": {
+          "password": "DEMO-hidden-child",
+          "safe": "DEMO-hidden-sibling"
+        },
+        "status": "ok"
+      }
+    },
+    {
+      "record_id": "R06",
+      "evidence": {
+        "a/b": {
+          "~meta": {
+            "password": "DEMO-ESC06"
+          }
+        },
+        "host": "api.example.test"
+      }
+    },
+    {
+      "record_id": "R07",
+      "evidence": {
+        "list": [
+          [
+            {
+              "password": "DEMO-ARRAY07"
+            }
+          ],
+          null,
+          2.5
+        ],
+        "unicode": "café"
+      }
+    },
+    {
+      "record_id": "R08",
+      "evidence": {
+        "status": "done",
+        "message": "token text is ordinary",
+        "empty": []
+      }
+    }
+  ],
+  "redaction_policy": {
+    "keys": [
+      "token",
+      "password"
+    ]
+  }
+}

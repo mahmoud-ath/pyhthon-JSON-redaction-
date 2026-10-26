@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "record_id": " L02 ",
+      "evidence": {
+        "z": false,
+        "a": [
+          0,
+          null,
+          {
+            "text": "café"
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "L01",
+      "evidence": {
+        "empty": {},
+        "value": "  keep spaces  "
+      }
+    }
+  ]
+}
